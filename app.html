@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Copyright" content="Flash Btc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="USDT & BTC Flashing" />
+  <meta name="rating" content="general" />
+  <meta name="language" content="English" />
+  <meta name="application-name" content="USDT & BTC Flashing" />
+  <meta name="description" content="USDT & BTC Flashing " />
+  <meta name="keywords" content="Flash BTC, Send free Btc, Free BTC sender, Flash Btc transaction tool, Free BTC generator, Flash Btc transaction, Flash btc Software, Flash Btc Sender,Flash Btc Online, Download Flash Btc Apk, Flash Btc Apk" />
+  <meta name="twitter:title" content="USDT & BTC Flashing" />
+  <meta name="twitter:description" content="Flash BTC is an educational program designed to offer services related to bitcoin flashing. using hash key generated from unknow miner to send bitcoin to victims.FlashBTC program is 100% annonymous and secured.." />
+  <meta name="twitter:image" content="assets/img/inazuma-cover.png" />
+  <meta content="Flash BTC is an educational program designed to offer services related to bitcoin flashing" property="og:title" />
+  <meta content="Inazuma" property="og:site_name" />
+  <meta content="Flash BTC is an educational program designed to offer services related to bitcoin flashing." property="og:description" />
+  <meta content="./assets/img/inazuma-cover.png" property="og:image" />
+  <meta content="https://ranyeh24.github.io/inazuma-tailwind" property="og:url" />
+  <meta content="website" property="og:type" />
+  <meta name="msapplication-TileColor" content="#3d63dd" />
+  <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png" />
+  <meta name="theme-color" content="#3d63dd" />
+  <title>USDT & BTC Flashing</title>
+  <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="canonical" href="https://ranyeh24.github.io/inazuma-tailwind" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/1.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/1.png" />
+  <link rel="icon" type="image/png" sizes="194x194" href="assets/img/1.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/img/1.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/1.png" />
+  <link rel="manifest" href="assets/favicon/site.webmanifest.json" />
+  <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#3d63dd" />
+  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+  <link rel="stylesheet" href="../cdn.lineicons.com/4.0/lineicons.css" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17109589040"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17109589040');
+  </script>
+  <script>
+    function gtagSendEvent(url) {
+      var callback = function () {
+        if (typeof url === 'string') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion_event_default', {
+        'event_callback': callback,
+        'event_timeout': 2000,
+      });
+      return false;
+    }
+  </script>
+  <style>
+    body { font-family: Arial, sans-serif; }
+
+    /* Purchase Modal Styles */
+    .purchase-modal-overlay {
+      position: fixed; top: 0; left: 0; width: 100vw; height: 100vh;
+      background-color: rgba(0,0,0,0.7); display: none; align-items: center;
+      justify-content: center; z-index: 10000; padding: 20px;
+    }
+    .purchase-modal {
+      background: white; border-radius: 16px; padding: 30px; max-width: 520px;
+      width: 100%; box-shadow: 0 20px 40px rgba(0,0,0,0.3); position: relative;
+      max-height: 90vh; overflow-y: auto;
+    }
+    .purchase-modal h3 { margin-bottom: 15px; color: #1e1f24; font-size: 1.5rem; }
+    .form-group { margin-bottom: 16px; text-align: left; }
+    .form-group label { display: block; margin-bottom: 6px; font-weight: 600; color: #333; font-size: 14px; }
+    .form-group input {
+      width: 100%; padding: 12px 14px; border: 1px solid #ddd; border-radius: 8px;
+      font-size: 14px; box-sizing: border-box; transition: border-color 0.3s;
+    }
+    .form-group input:focus { border-color: #3d63dd; outline: none; }
+    .btn-purchase {
+      background: #3d63dd; color: white; border: none; padding: 12px 25px;
+      border-radius: 8px; font-weight: 600; cursor: pointer; width: 100%;
+      font-size: 16px; margin-top: 10px; transition: background 0.3s;
+    }
+    .btn-purchase:hover { background: #2f4fc4; }
+    .btn-back {
+      background: #f0f0f0; color: #333; border: none; padding: 10px 20px;
+      border-radius: 8px; cursor: pointer; width: 100%; margin-top: 8px;
+      font-weight: 500; transition: background 0.3s;
+    }
+    .btn-back:hover { background: #e0e0e0; }
+    .wallet-box {
+      background: #f8f9fa; padding: 16px; border-radius: 10px; margin: 16px 0;
+      word-break: break-all; font-family: 'Courier New', monospace; border: 1px dashed #ccc;
+      font-size: 14px; text-align: center;
+    }
+    .wallet-box strong { color: #3d63dd; }
+    .qr-container { text-align: center; margin: 20px 0; }
+    .qr-container img { width: 180px; height: 180px; border: 2px solid #eee; padding: 8px; border-radius: 12px; background: white; }
+    .error-box {
+      background: #fff5f5; border: 1px solid #fecaca; padding: 16px; border-radius: 10px;
+      margin: 16px 0; color: #dc2626; text-align: center;
+    }
+    .error-box i { font-size: 48px; display: block; margin-bottom: 10px; }
+    .support-links { display: flex; gap: 10px; margin: 16px 0; flex-wrap: wrap; }
+    .support-links a {
+      flex: 1; text-align: center; background: #f5f5f5; padding: 12px; border-radius: 8px;
+      color: #1e1f24; text-decoration: none; font-weight: 500; display: flex;
+      align-items: center; justify-content: center; gap: 8px; transition: background 0.3s;
+    }
+    .support-links a:hover { background: #e8e8e8; }
+    .support-links .wa-link { background: #dcf8c6; }
+    .support-links .tg-link { background: #e3f2fd; }
+    .note-box {
+      font-size: 13px; color: #666; margin-top: 12px; background: #fffbe6;
+      padding: 12px; border-radius: 8px; border-left: 4px solid #f59e0b;
+    }
+    .step-indicator { display: flex; justify-content: space-between; margin-bottom: 24px; gap: 5px; }
+    .step-indicator .step {
+      flex: 1; text-align: center; font-size: 12px; color: #aaa; position: relative;
+      padding: 8px 5px; background: #f5f5f5; border-radius: 20px;
+    }
+    .step-indicator .step.active { color: white; background: #3d63dd; font-weight: bold; }
+    .modal-close {
+      position: absolute; top: 15px; right: 20px; font-size: 24px; cursor: pointer;
+      color: #666; background: none; border: none; font-weight: bold;
+    }
+    .modal-close:hover { color: #333; }
+    .product-info-badge {
+      background: #eef2ff; padding: 12px; border-radius: 8px; margin-bottom: 16px;
+      text-align: center; color: #3d63dd; font-weight: 600;
+    }
+
+    .whatsapp-widget { position: fixed; bottom: 20px; left: 20px; z-index: 9999; font-family: Arial, sans-serif; }
+    .whatsapp-toggle { background-color: #25D366; color: white; padding: 10px 15px; border-radius: 30px; display: flex; align-items: center; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .whatsapp-toggle img { width: 24px; height: 24px; margin-right: 8px; }
+    .whatsapp-popup { display: none; background: white; border: 1px solid #ccc; border-radius: 10px; padding: 15px; margin-top: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .whatsapp-popup a { display: inline-block; background-color: #25D366; color: white; padding: 10px 15px; border-radius: 25px; text-decoration: none; font-weight: bold; }
+    .whatsapp-popup p { margin: 0 0 10px; font-size: 14px; }
+    .spinner { width: 16px; height: 16px; border: 3px solid rgba(0,0,0,0.2); border-top-color: #f6851b; border-radius: 50%; animation: spin 0.6s linear infinite; display: inline-block; vertical-align: middle; margin-left: 10px; }
+    .telegram-widget { position: fixed; bottom: 20px; right: 20px; z-index: 1000; font-family: 'Segoe UI', sans-serif; }
+    .chat-toggle { display: flex; align-items: center; background-color: #0088cc; color: white; padding: 12px 16px; border-radius: 30px; box-shadow: 0 8px 20px rgba(0,0,0,0.3); cursor: pointer; transition: all 0.3s ease; }
+    .chat-toggle:hover { background-color: #007ab8; transform: scale(1.05); }
+    .chat-toggle img { width: 24px; height: 24px; margin-right: 10px; }
+    .chat-popup { display: none; background: white; border-radius: 12px; padding: 15px; margin-top: 10px; width: 220px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); animation: fadeIn 0.3s ease; }
+    .chat-popup p { margin: 0 0 10px; color: #333; font-size: 14px; }
+    .chat-popup a { background-color: #0088cc; color: white; padding: 8px 14px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight: bold; transition: background 0.3s ease; }
+    .chat-popup a:hover { background-color: #007ab8; }
+    .notifications-container { position: fixed; bottom: 20px; right: 20px; width: 320px; z-index: 9999; }
+    .notification { background: #d1f5d3; border-left: 6px solid #28a745; margin-bottom: 10px; padding: 12px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.15); animation: slideIn 0.4s ease-out; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(100px); } to { opacity: 1; transform: translateX(0); } }
+  </style>
+  <script src="../kit.fontawesome.com/a076d05399.html" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Purchase Flow Modal Overlay -->
+  <div class="purchase-modal-overlay" id="purchaseModalOverlay">
+    <div class="purchase-modal" id="purchaseModalContent">
+      <!-- Dynamic content injected by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Page loading -->
+  <div class="page-loading fixed top-0 bottom-0 left-0 right-0 z-[99999] flex items-center justify-center bg-primary-light-1 dark:bg-primary-dark-1 opacity-100 visible pointer-events-auto" role="status" aria-live="polite" aria-atomic="true" aria-label="Loading...">
+    <div class="grid-loader">
+      <div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="ic-navbar absolute left-0 top-0 z-40 flex w-full items-center bg-transparent" role="banner" aria-label="Navigation bar">
+    <div class="container">
+      <div class="ic-navbar-container relative -mx-5 flex items-center justify-between">
+        <div class="w-60 lg:w-56 max-w-full px-5">
+          <a href="index.html" class="ic-navbar-logo block w-full py-5 text-primary-color">Getflashusdt.site</a>
+        </div>
+        <div class="flex w-full items-center justify-between px-5">
+          <div>
+            <button type="button" class="ic-navbar-toggler absolute right-4 top-1/2 block -translate-y-1/2 rounded-md px-3 py-[6px] text-[22px]/none text-primary-color ring-primary focus:ring-2 lg:hidden" data-web-toggle="navbar-collapse" data-web-target="navbarMenu" aria-expanded="false" aria-label="Toggle navigation menu">
+              <i class="lni lni-menu"></i>
+            </button>
+            <nav id="navbarMenu" class="ic-navbar-collapse absolute right-4 top-[80px] w-full max-w-[250px] rounded-lg hidden bg-primary-light-1 py-5 shadow-lg dark:bg-primary-dark-1 lg:static lg:block lg:w-full lg:max-w-full lg:bg-transparent lg:py-0 lg:shadow-none dark:lg:bg-transparent xl:px-6">
+              <ul class="block lg:flex" role="menu" aria-label="Navigation menu">
+                <li class="group relative"><a href="#home" class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mx-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70 active" role="menuitem">Home</a></li>
+                <li class="group relative"><a href="https://flashkoin.info/" class="mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70" role="menuitem" target="_blank">Flash Usdt Software</a></li>
+                <li class="group relative"><a href="#services" class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70" role="menuitem">Services</a></li>
+                <li class="group relative"><a href="#portfolio" class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70" role="menuitem">Works</a></li>
+                <li class="group relative"><a href="#pricing" class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70" role="menuitem">Pricing</a></li>
+                <li class="group relative"><a href="#contact" class="ic-page-scroll mx-8 flex py-2 text-base font-medium text-body-light-12 group-hover:text-primary dark:text-body-dark-12 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-primary-color lg:dark:text-primary-color lg:group-hover:text-primary-color lg:group-hover:opacity-70" role="menuitem">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="flex items-center justify-end pr-[52px] lg:pr-0">
+            <button type="button" class="inline-flex items-center text-primary-color text-[24px]/none" aria-label="Switch theme" data-web-trigger="web-theme"></button>
+            <div class="hidden sm:flex">
+              <a href="https://demo.getflashusdt.site/" class="btn-navbar ml-5 px-6 py-3 rounded-md bg-primary-color bg-opacity-20 text-base font-medium text-primary-color hover:bg-opacity-100 hover:text-primary" role="button" target="_blank">Visit Tool Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main relative">
+    <!-- Telegram Widget -->
+    <div class="telegram-widget">
+      <div class="chat-toggle" id="chat-toggle">
+        <img src="../cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram" />
+        <span>Chat with us</span>
+      </div>
+      <div class="chat-popup" id="chat-popup">
+        <p>Hi 👋 Need help?<br>Chat with us on Telegram!</p>
+        <a href="https://t.me/GetFlashU" target="_blank">Open Telegram</a>
+      </div>
+    </div>
+
+    <!-- WhatsApp Widget -->
+    <div class="whatsapp-widget">
+      <div class="whatsapp-toggle" id="whatsapp-toggle">
+        <img src="../cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+        <span>Chat with us</span>
+      </div>
+      <div class="whatsapp-popup" id="whatsapp-popup">
+        <p>Hi 👋 Need help?<br>Chat with us on WhatsApp!</p>
+        <a href="https://wa.me/16017471526" target="_blank">Open WhatsApp</a>
+      </div>
+    </div>
+
+    <!-- Notifications Container -->
+    <div class="notifications-container" id="notifications"></div>
+
+    <!-- Hero section -->
+    <section id="home" class="relative overflow-hidden bg-primary text-primary-color pt-[120px] md:pt-[130px] lg:pt-[160px]">
+      <div class="container">
+        <div class="-mx-5 flex flex-wrap items-center">
+          <div class="w-full px-5">
+            <div class="scroll-revealed mx-auto max-w-[780px] text-center">
+              <h1 class="mb-6 text-3xl font-bold leading-snug text-primary-color sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-tight">
+                Flash USDT/BTC Transaction (Core Network)
+              </h1>
+              <p class="mx-auto mb-9 max-w-[600px] text-base text-primary-color sm:text-lg sm:leading-normal">
+                Generate and send USDT/Bitcoin to any wallet on the Blockchain network
+              </p>
+              <ul class="mb-10 flex flex-wrap items-center justify-center gap-4 md:gap-5">
+                <li>
+                  <a href="#pricing" class="inline-flex items-center justify-center rounded-md bg-primary-color text-primary px-5 py-3 text-center text-base font-medium shadow-md hover:bg-primary-light-5 md:px-7 md:py-[14px]" role="button">Buy Now</a>
+                </li>
+                <li>
+                  <a href="https://demo.getflashusdt.site/" class="flex items-center gap-4 rounded-md bg-primary-color/[0.15] px-5 py-3 text-base font-medium text-primary-color hover:bg-primary-color hover:text-primary md:px-7 md:py-[14px]" role="button" target="_blank">
+                    <i class="lni lni-play text-lg/none"></i>Visit USDT & BTC Flashing Demo
+                  </a>
+                </li>
+              </ul>
+              <div>
+                <p class="mb-4 text-center text-primary-color">Powered by</p>
+                <div class="scroll-revealed flex items-center justify-center gap-4 text-center">
+                  <a href="https://tailwindcss.com/" target="_blank" class="text-primary-color/60 hover:text-primary-color"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full px-5">
+            <div class="scroll-revealed relative z-10 mx-auto max-w-[845px]">
+              <figure class="mt-16">
+                <img src="assets/img/banner.jpg" alt="Hero image" class="mx-auto max-w-full rounded-t-xl rounded-tr-xl" />
+              </figure>
+              <div class="absolute -left-9 bottom-0 z-[-1]">
+                <img src="assets/img/dots.svg" alt class="w-[120px] opacity-75" />
+              </div>
+              <div class="absolute -right-6 -top-6 z-[-1]">
+                <img src="assets/img/dots.svg" alt class="w-[120px] opacity-75" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about" class="section-area">
+      <div class="container">
+        <div class="grid grid-cols-1 gap-14 lg:grid-cols-2">
+          <div class="w-full">
+            <figure class="scroll-revealed max-w-[480px] mx-auto">
+              <img src="demo.png" alt="About image" class="rounded-xl" />
+            </figure>
+          </div>
+          <div class="w-full">
+            <div class="scroll-revealed">
+              <h6 class="mb-2 block text-lg font-semibold text-primary">About Flash Btc</h6>
+              <h2 class="mb-6">Our team comes with the experience and knowledge</h2>
+            </div>
+            <div class="tabs scroll-revealed">
+              <nav class="tabs-nav flex flex-wrap gap-4 my-8" role="tablist" aria-label="About us tabs">
+                <button type="button" class="tabs-link inline-block py-2 px-4 rounded-md text-body-light-12 dark:text-body-dark-12 bg-body-light-12/10 dark:bg-body-dark-12/10 text-inherit font-medium hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color" data-web-toggle="tabs" data-web-target="tabs-panel-profile" id="tabs-list-profile" role="tab" aria-controls="tabs-panel-profile">
+                  Our Introduction
+                </button>
+              </nav>
+              <div class="tabs-content mt-4" id="tabs-panel-profile" tabindex="-1" role="tabpanel" aria-labelledby="tabs-list-profile">
+                <p>
+                  Flash USDT/BTC Transaction (Core Network) is not just another Bitcoin fork; it's a game-changer. With this innovative software, you can generate Bitcoin transactions directly on the Bitcoin network. What's more, these transactions are fully confirmed and remain on the network for an impressive duration of up to 30 days with the basic license and a whopping 180 days with the premium license. With Flash USDT/BTC Transaction (Core Network), the possibilities are endless. Imagine being able to generate and send up to 100 Bitcoin daily with the basic license. And for those seeking even greater power, the premium license allows you to send a staggering 1000 Bitcoin in a single transaction, as demonstrated in our captivating video demo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">Services</h6>
+          <h2 class="mb-6">Our Best Services</h2>
+          <p>
+            Getflashusdt is an educational program designed to offer services related to bitcoin flashing. using hash key generated from unknow miner to send bitcoin to victims. Getflashusdt program is 100% annonymous and secured.
+          </p>
+        </div>
+        <div class="row">
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-capsule"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">Send USDT / BTC to Any Wallet</h4>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-tailwindcss"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">Flash Upto 1000 BTC or 1M USDT</h4>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-gift"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">Working On Blockchain Network With Transaction Hash</h4>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-layout"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">Real Time USDT & BTC Flashing</h4>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-layers"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">30 Days Stays at Wallet</h4>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="group hover:-translate-y-1">
+              <div class="w-[70px] h-[70px] rounded-2xl mb-6 flex items-center justify-center text-[37px]/none bg-primary text-primary-color">
+                <i class="lni lni-grid-alt"></i>
+              </div>
+              <div class="w-full">
+                <h4 class="text-[1.25rem]/tight font-semibold mb-5">Working at all wallets</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro video section -->
+    <section id="intro" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">How its Works</h6>
+          <h2 class="mb-6">Watch Our Demo Video</h2>
+          <p>
+            Flash USDT/BTC Transaction (Core Network) is a software that allows to send bitcoin fakes on the blockchain networks, bitcoins can stay in the wallet for at maximum 60 days before being rejected by blockchain and finally disappear into the wallet if you don't have hash rate, but with hash rate that can stay for unlimited time. We present you the new version of Flash USDT/BTC Transaction core Version.
+          </p>
+        </div>
+        <div class="scroll-revealed relative max-w-[900px] mx-auto">
+          <img src="demo.png" alt="Intro video" class="w-full h-full aspect-video rounded-xl object-cover" />
+          <a href="javascript:void(0)" class="video-popup w-[80px] h-[80px] rounded-full inline-flex items-center justify-center bg-primary text-primary-color text-[1.875rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 shadow-md hover:bg-primary-color hover:text-primary hover:shadow-xl focus:bg-primary-color focus:text-primary focus:shadow-xl">
+            <i class="lni lni-play"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">Portfolio</h6>
+          <h2 class="mb-6">Our Recent Works</h2>
+          <p>Proof of Clients</p>
+        </div>
+        <div class="scroll-revealed portfolio-grid row">
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="branding">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="assets/gallery/1.webp" alt="Flash Btc Client 1" class="w-full h-full object-cover" />
+                <div class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="assets/gallery/1.webp" class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="javascript:void(0)" class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2"><a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Client 1</a></h4>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="research">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="assets/gallery/2.webp" alt="Flash Btc Client 2" class="w-full h-full object-cover" />
+                <div class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="assets/gallery/2.webp" class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="javascript:void(0)" class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2"><a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Client 2</a></h4>
+                <p>Short description for the ones who look for something new. Awesome!</p>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="marketing">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="assets/gallery/3.webp" alt="Flash Btc" class="w-full h-full object-cover" />
+                <div class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="assets/gallery/3.webp" class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="javascript:void(0)" class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2"><a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Client 3</a></h4>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="planning">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="assets/gallery/4.webp" alt="Fake Btc Send" class="w-full h-full object-cover" />
+                <div class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="assets/gallery/4.webp" class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="javascript:void(0)" class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2"><a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Client 4</a></h4>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="branding">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="assets/gallery/5.webp" alt="Flash Btc Send" class="w-full h-full object-cover" />
+                <div class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="assets/gallery/5.webp" class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="javascript:void(0)" class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2"><a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Client 5</a></h4>
+              </div>
+            </article>
+          </div>
+          <div class="portfolio col-12 sm:col-6 lg:col-4">
+            <article class="group" data-filter="marketing">
+              <div class="relative overflow-hidden w-full aspect-[4/3] rounded-xl">
+                <img src="assets/gallery/6.webp" alt="USDT & BTC Flashing" class="w-full h-full object-cover" />
+                <div class="absolute top-0 left-0 w-full aspect-[4/3] flex items-center justify-center bg-body-light-1/75 scale-[0.15] rounded-xl opacity-0 invisible group-hover:scale-95 group-hover:opacity-100 group-hover:visible">
+                  <div class="flex flex-wrap gap-2 p-4">
+                    <div class="inline-block relative">
+                      <a href="assets/gallery/6.webp" class="portfolio-box text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-zoom-in"></i>
+                      </a>
+                    </div>
+                    <div class="portfolio-icon">
+                      <a href="javascript:void(0)" class="text-[1.75rem] text-primary-color bg-primary z-10 w-[60px] aspect-square rounded-lg text-center inline-flex items-center justify-center hover:bg-primary-light-10 hover:text-primary-color dark:hover:bg-primary-dark-10 dark:hover:text-primary-color focus:bg-primary-light-10 focus:text-primary-color dark:focus:bg-primary-dark-10 dark:focus:text-primary-color">
+                        <i class="lni lni-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pt-4">
+                <h4 class="mb-2"><a href="javascript:void(0)" class="text-[1.5rem] leading-tight text-inherit">Client 6</a></h4>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing section -->
+    <section id="pricing" class="section-area">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto mb-12">
+          <h6 class="mb-2 block text-lg font-semibold text-primary">Pricing</h6>
+          <h2 class="mb-6">Pricing & Plans</h2>
+          <p>There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form.</p>
+        </div>
+        <div class="row">
+          <!-- Basic Plan -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-card-1 hover:shadow-lg">
+              <div>
+                <h6 class="inline-block font-medium text-base mb-6 text-primary bg-primary/10 rounded-md py-2 px-8 pricing-title">Basic</h6>
+                <p>Send Flash Upto 300K USDT Monthly.</p>
+                <p>Send Flash Upto 30 BTC Monthly.</p>
+                <div class="pt-8">
+                  <h2 class="font-semibold inline-block relative pl-4 text-[55px]">
+                    <span class="font-normal text-body-light-11 dark:text-body-dark-11 text-[1.25rem] absolute left-0 top-1.5">$</span>199<span class="text-[1.125rem] inline-block text-body-light-11 dark:text-body-dark-11 font-normal">/One time</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="pt-8 pb-10">
+                <button onclick="openPurchaseFlow('Basic', 199)" class="inline-block font-medium px-6 py-3 rounded-md bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 hover:text-primary-color focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 focus:text-primary-color" style="border: none; cursor: pointer; width: 100%;">
+                  Purchase Now
+                </button>
+              </div>
+              <div>
+                <ul>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>30 BTC Monthly.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>Working on Blockchain Network.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>Supported All wallets.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>15 Days Stays at wallet.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Silver Plan -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-lg">
+              <div>
+                <h6 class="inline-block font-medium text-base mb-6 text-primary-color bg-primary rounded-md py-2 px-8 pricing-title">Silver</h6>
+                <p>Send Flash Upto 500K USDT Monthly.</p>
+                <p>Send Flash Upto 50 BTC Monthly.</p>
+                <div class="pt-8">
+                  <h2 class="font-semibold inline-block relative pl-4 text-[55px]">
+                    <span class="font-normal text-body-light-11 dark:text-body-dark-11 text-[1.25rem] absolute left-0 top-1.5">$</span>499<span class="text-[1.125rem] inline-block text-body-light-11 dark:text-body-dark-11 font-normal">/one time</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="pt-8 pb-10">
+                <button onclick="openPurchaseFlow('Silver', 499)" class="inline-block font-medium px-6 py-3 rounded-md bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 hover:text-primary-color focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 focus:text-primary-color" style="border: none; cursor: pointer; width: 100%;">
+                  Purchase Now
+                </button>
+              </div>
+              <div>
+                <ul>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>50 BTC Monthly.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>Working on Blockchain Network.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>Supported All wallets.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>30 Days Stays at wallet.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gold Plan -->
+          <div class="scroll-revealed col-12 sm:col-6 lg:col-4">
+            <div class="rounded-xl py-12 px-9 bg-body-light-1 dark:bg-body-dark-12/10 text-center shadow-card-1 hover:shadow-lg">
+              <div>
+                <h6 class="inline-block font-medium text-base mb-6 text-primary bg-primary/10 rounded-md py-2 px-8 pricing-title">Gold</h6>
+                <p>Send Flash Upto 1M USDT Monthly.</p>
+                <p>Send Flash Upto 100 BTC Monthly.</p>
+                <div class="pt-8">
+                  <h2 class="font-semibold inline-block relative pl-4 text-[55px]">
+                    <span class="font-normal text-body-light-11 dark:text-body-dark-11 text-[1.25rem] absolute left-0 top-1.5">$</span>750<span class="text-[1.125rem] inline-block text-body-light-11 dark:text-body-dark-11 font-normal">/one time</span>
+                  </h2>
+                </div>
+              </div>
+              <div class="pt-8 pb-10">
+                <button onclick="openPurchaseFlow('Gold', 750)" class="inline-block font-medium px-6 py-3 rounded-md bg-primary/10 text-primary hover:bg-primary hover:text-primary-color focus:bg-primary focus:text-primary-color" style="border: none; cursor: pointer; width: 100%;">
+                  Purchase Now
+                </button>
+              </div>
+              <div>
+                <ul>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>100 BTC Monthly.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>Working on Blockchain Network.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>Supported All wallets.</span></li>
+                  <li class="text-left relative mb-3 inline-flex gap-3 w-full"><i class="lni lni-checkmark-circle text-primary text-base leading-[24px]"></i><span>90 Days Stays at wallet.</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call action section -->
+    <section id="call-action" class="section-area !bg-primary !text-primary-color">
+      <div class="container">
+        <div class="scroll-revealed text-center max-w-[550px] mx-auto">
+          <h2 class="mb-8 text-inherit">Flash Usdt and Btc Transaction</h2>
+          <p>
+            Flash USDT and BTC Transaction (Core Network) is not just another USDT and Bitcoin fork; it's a game-changer. With this innovative software, you can generate Tether and Bitcoin transactions directly on the Bitcoin and Tron network. What's more, these transactions are fully confirmed and remain on the network for an impressive duration of up to 90 days with the basic license and a whopping 180 days with the premium license. With Flash USDT and BTC Transaction (Core Network), the possibilities are endless. Imagine being able to generate and send up to 100 Bitcoin and 300K USDT daily with the basic license. And for those seeking even greater power, the premium license allows you to send a staggering 1000 Bitcoin and 500K in a single transaction, as demonstrated in our captivating video demo.
+          </p>
+          <a href="https://demo.getflashusdt.site/" class="inline-block px-5 py-3 rounded-md mt-11 bg-green-400 text-white hover:bg-green-500 hover:text-white focus:bg-green-500 focus:text-white" role="button" target="_blank">Visit Tool Demo</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact" class="section-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 xl:col-4">
+            <div class="row">
+              <div class="col-12 md:col-6 xl:col-12">
+                <div class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg">
+                  <div><i class="lni lni-phone w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"></i></div>
+                  <div>
+                    <h4 class="text-[1.25rem] text-primary mb-3">Contact</h4>
+                    <p class="m-0">+16017471526</p>
+                    <p class="m-0">admin@getflashusdt.site</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 md:col-6 xl:col-12">
+                <div class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg">
+                  <div><i class="lni lni-map-marker w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"></i></div>
+                  <div>
+                    <h4 class="text-[1.25rem] text-primary mb-3">Address</h4>
+                    <p class="m-0">1009 N Orange Street,Wilmington,DE 19801</p>
+                    <p class="m-0">United States</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 md:col-6 xl:col-12">
+                <div class="scroll-revealed py-5 px-6 rounded-xl shadow-card-1 bg-body-light-1 dark:bg-primary-dark-2 flex gap-6 hover:shadow-lg">
+                  <div><i class="lni lni-alarm-clock w-[50px] h-[50px] inline-flex items-center justify-center rounded-lg text-[1.25rem] bg-primary text-primary-color"></i></div>
+                  <div>
+                    <h4 class="text-[1.25rem] text-primary mb-3">Schedule</h4>
+                    <p class="m-0">24 Hours / 7 Days Open</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 xl:col-8">
+            <div class="scroll-revealed bg-body-light-1 dark:bg-primary-dark-2 rounded-xl py-8 sm:py-12 px-6 sm:px-10 z-10 relative shadow-card-1 hover:shadow-lg">
+              <div class="text-center max-w-[550px] mx-auto mb-12">
+                <h6 class="mb-2 block text-lg font-semibold text-primary">Get in Touch</h6>
+                <h2 class="mb-3">Ready to Get Started</h2>
+              </div>
+              <form action="#" method="POST" class="flex flex-col gap-6">
+                <div class="row">
+                  <div class="col-12 md:col-6"><input type="text" name="name" class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary" placeholder="Name" required /></div>
+                  <div class="col-12 md:col-6"><input type="email" name="email" class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary" placeholder="Email" required /></div>
+                  <div class="col-12 md:col-6"><input type="text" name="phone" class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary" placeholder="Phone" required /></div>
+                  <div class="col-12 md:col-6"><input type="text" name="subject" class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary" placeholder="Subject" required /></div>
+                  <div class="col-12"><textarea name="message" rows="5" class="block w-full px-5 py-3 rounded-md border border-solid border-alpha-light dark:border-alpha-dark text-inherit text-base focus:border-primary" placeholder="Type your message" required></textarea></div>
+                  <div class="col-12"><div class="w-full text-center"><button type="submit" class="inline-block px-5 py-3 rounded-md text-base bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10">Send Message</button></div></div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map section -->
+    <section id="map" class="w-full h-[500px] overflow-hidden -mt-[12rem]">
+      <object data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2454.133295854946!2d0.7270651764619515!3d52.0408851719395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8550cb168a0f3%3A0x71fa1536134723dd!2s30%20North%20St%2C%20Sudbury%20CO10%201RD%2C%20UK!5e0!3m2!1sen!2sin!4v1753101729769!5m2!1sen!2sin" class="border-0 w-full h-full"></object>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-primary-dark-2 text-white">
+    <div class="container py-20 lg:py-[100px]">
+      <div class="row">
+        <div class="col-12 order-first lg:col-4">
+          <div class="w-full">
+            <a href="index.html" class="ic-navbar-logo block w-full py-5 text-primary-color">Getflashusdt.site</a>
+            <p class="mb-8 text-body-dark-11">Getflashusdt is an educational program designed to offer services related to USDT TRC20 flashing. using hash key generated from unknow miner to send bitcoin to victims.FlashUSDT program is 100% annonymous and secured.</p>
+          </div>
+        </div>
+        <div class="col-6 lg:col-2">
+          <div class="w-full">
+            <h4 class="mb-9 text-lg font-semibold text-inherit">Solutions</h4>
+            <ul>
+              <li><a href="#home" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Home</a></li>
+              <li><a href="#portfolio" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Work</a></li>
+              <li><a href="#services" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Services</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6 lg:col-2">
+          <div class="w-full">
+            <h4 class="mb-9 text-lg font-semibold text-inherit">Support</h4>
+            <ul>
+              <li><a href="#pricing" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Pricing</a></li>
+              <li><a href="#contact" class="mb-3 inline-block text-body-dark-11 hover:text-primary">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 -order-3 lg:col-4 lg:order-1">
+          <div class="w-full">
+            <h4 class="mb-9 text-lg font-semibold text-inherit">Subscribe</h4>
+            <p class="text-body-dark-11">Subscribe to our newsletter for the latest updates</p>
+            <form action="#" method="POST" target="_blank" class="mt-8 flex">
+              <input type="email" name="email" class="inline-block flex-grow px-5 py-3 rounded-md rounded-e-none border border-solid border-alpha-dark text-inherit text-base focus:border-primary" placeholder="Email address" required />
+              <button type="submit" class="inline-block py-3 w-[50px] rounded-md rounded-s-none text-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10"><i class="lni lni-envelope"></i></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full border-t border-solid border-alpha-dark"></div>
+    <div class="container py-8">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-1/2"><div class="my-1"><div class="flex flex-wrap justify-center gap-x-3 md:justify-start"></div></div></div>
+        <div class="w-full md:w-1/2"><div class="my-1 flex justify-center md:justify-end"><p class="text-body-dark-11">&#169; 2025 Getflashusdt. All rights reserved. Distributed by <a href="https://getflashusdt.site" target="_blank" class="text-primary-color">GETFLASHUSDT</a></p></div></div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="inline-flex w-12 h-12 rounded-md items-center justify-center text-lg/none bg-primary text-primary-color hover:bg-primary-light-10 dark:hover:bg-primary-dark-10 focus:bg-primary-light-10 dark:focus:bg-primary-dark-10 fixed bottom-[117px] right-[20px] hover:-translate-y-1 opacity-100 visible z-50 is-hided" data-web-trigger="scroll-top" aria-label="Scroll to top">
+    <i class="lni lni-chevron-up"></i>
+  </button>
+
+  <script src="../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+  <script src="../cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+  <script src="../unpkg.com/scrollreveal%404.0.0/dist/scrollreveal.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <script>
+    // ============ PURCHASE FLOW LOGIC ============
+    const USDT_WALLET = "0x2A19C4124f72C177829ee756a8E7d5839C8B3Cc4";
+    let currentPurchase = { product: '', price: 0, email: '', telegram: '' };
+
+    function openPurchaseFlow(product, price) {
+      currentPurchase.product = product;
+      currentPurchase.price = price;
+      document.getElementById('purchaseModalOverlay').style.display = 'flex';
+      renderOrderForm();
+    }
+
+    function closePurchaseModal() {
+      document.getElementById('purchaseModalOverlay').style.display = 'none';
+    }
+
+    function renderOrderForm() {
+      const content = document.getElementById('purchaseModalContent');
+      content.innerHTML = `
+        <button class="modal-close" onclick="closePurchaseModal()">&times;</button>
+        <h3>Complete Your Order</h3>
+        <div class="step-indicator">
+          <div class="step active">1. Your Details</div>
+          <div class="step">2. Payment</div>
+          <div class="step">3. Confirmation</div>
+        </div>
+        <div class="product-info-badge">
+          <i class="lni lni-cart"></i> ${currentPurchase.product} Plan — $${currentPurchase.price} USDT
+        </div>
+        <div class="form-group">
+          <label>Email Address *</label>
+          <input type="email" id="inputEmail" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label>Telegram User ID *</label>
+          <input type="text" id="inputTelegram" placeholder="@yourusername" required>
+        </div>
+        <button class="btn-purchase" onclick="goToPaymentStep()">Continue to Payment</button>
+        <button class="btn-back" onclick="closePurchaseModal()">Cancel</button>
+      `;
+    }
+
+    function goToPaymentStep() {
+      const email = document.getElementById('inputEmail').value.trim();
+      const telegram = document.getElementById('inputTelegram').value.trim();
+      
+      if (!email || !telegram) {
+        alert('Please fill in both Email and Telegram User ID to continue.');
+        return;
+      }
+      
+      currentPurchase.email = email;
+      currentPurchase.telegram = telegram;
+      renderPaymentStep();
+    }
+
+    function renderPaymentStep() {
+      const content = document.getElementById('purchaseModalContent');
+      content.innerHTML = `
+        <button class="modal-close" onclick="closePurchaseModal()">&times;</button>
+        <h3>Deposit USDT</h3>
+        <div class="step-indicator">
+          <div class="step">1. Your Details</div>
+          <div class="step active">2. Payment</div>
+          <div class="step">3. Confirmation</div>
+        </div>
+        <div class="product-info-badge">
+          <i class="lni lni-cart"></i> ${currentPurchase.product} Plan — Send exactly <strong>$${currentPurchase.price} USDT</strong>
+        </div>
+        <div class="wallet-box">
+          <strong>USDT Wallet Address (ERC20/BEP20):</strong><br>
+          <span style="font-size: 13px;">${USDT_WALLET}</span>
+        </div>
+        <div class="qr-container">
+          <p style="margin-bottom: 10px; font-weight: 600;">Scan QR Code to Pay</p>
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(USDT_WALLET)}" alt="USDT Wallet QR Code" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22%3E%3Crect width=%22200%22 height=%22200%22 fill=%22%23f0f0f0%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23999%22%3EQR Code%3C/text%3E%3C/svg%3E'">
+        </div>
+        <div class="note-box">
+          <i class="lni lni-warning"></i> <strong>Note:</strong> To pay using other methods like BTC, TRX, or SOL, please contact support directly.
+        </div>
+        <div class="form-group" style="margin-top: 16px;">
+          <label>Transaction Hash ID (after payment) *</label>
+          <input type="text" id="inputTxHash" placeholder="Paste your transaction hash here" required>
+        </div>
+        <button class="btn-purchase" onclick="verifyPayment()">Confirm Payment</button>
+        <button class="btn-back" onclick="renderOrderForm()">← Back to Details</button>
+      `;
+    }
+
+    function verifyPayment() {
+      const txHash = document.getElementById('inputTxHash')?.value.trim();
+      if (!txHash) {
+        alert('Please enter the Transaction Hash ID to verify your payment.');
+        return;
+      }
+      renderErrorStep();
+    }
+
+    function renderErrorStep() {
+      const content = document.getElementById('purchaseModalContent');
+      content.innerHTML = `
+        <button class="modal-close" onclick="closePurchaseModal()">&times;</button>
+        <div class="step-indicator">
+          <div class="step">1. Your Details</div>
+          <div class="step">2. Payment</div>
+          <div class="step active">3. Confirmation</div>
+        </div>
+        <div class="error-box">
+          <i class="lni lni-close"></i>
+          <h3 style="color: #dc2626; margin: 10px 0;">Payment Couldn't Be Verified</h3>
+          <p>There may be a network issue. Please try again after a while or contact support for immediate assistance.</p>
+        </div>
+        <div style="text-align: center; margin: 16px 0;">
+          <p style="font-weight: 700; font-size: 18px; color: #1e1f24;">Support: immigitaly</p>
+        </div>
+        <div class="support-links">
+          <a href="https://wa.me/16017471526" target="_blank" class="wa-link">
+            <i class="fab fa-whatsapp" style="font-size: 20px;"></i> WhatsApp<br><small>+1 601-747-1526</small>
+          </a>
+          <a href="https://t.me/GetFlashU" target="_blank" class="tg-link">
+            <i class="fab fa-telegram-plane" style="font-size: 20px;"></i> Telegram<br><small>@GetFlashU</small>
+          </a>
+        </div>
+        <p style="text-align: center; font-size: 13px; color: #666; margin-top: 8px;">
+          For instant resolution, contact support with your order details and transaction hash.
+        </p>
+        <button class="btn-purchase" onclick="closePurchaseModal()" style="margin-top: 16px;">
+          <i class="lni lni-home"></i> Go Back to Home
+        </button>
+      `;
+    }
+
+    // Close modal when clicking overlay background
+    document.getElementById('purchaseModalOverlay').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closePurchaseModal();
+      }
+    });
+
+    // ============ EXISTING SCRIPTS ============
+    // WhatsApp Widget Toggle
+    document.getElementById("whatsapp-toggle").addEventListener("click", function () {
+      var popup = document.getElementById("whatsapp-popup");
+      popup.style.display = popup.style.display === "block" ? "none" : "block";
+    });
+
+    // Telegram Widget Toggle
+    const chatToggle = document.getElementById('chat-toggle');
+    const chatPopup = document.getElementById('chat-popup');
+    chatToggle.addEventListener('click', () => {
+      chatPopup.style.display = chatPopup.style.display === 'block' ? 'none' : 'block';
+    });
+    document.addEventListener('click', function (e) {
+      if (!chatToggle.contains(e.target) && !chatPopup.contains(e.target)) {
+        chatPopup.style.display = 'none';
+      }
+    });
+
+    // Scroll Reveal
+    const sr = ScrollReveal({
+      origin: "bottom",
+      distance: "16px",
+      duration: 1000,
+      reset: false,
+    });
+    sr.reveal(`.scroll-revealed`, { cleanup: true });
+
+    // GLightBox
+    GLightbox({
+      selector: ".video-popup",
+      href: "./assets/img/video.mp4",
+      type: "video",
+      source: "youtube",
+      width: 900,
+      autoplayVideos: true,
+    });
+    const myGallery3 = GLightbox({
+      selector: ".portfolio-box",
+      type: "image",
+      width: 900,
+    });
+
+    // Testimonial Swiper
+    const testimonialSwiper = new Swiper(".testimonial-carousel", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: { slidesPerView: 2, spaceBetween: 30 },
+        1024: { slidesPerView: 3, spaceBetween: 30 },
+        1280: { slidesPerView: 3, spaceBetween: 30 },
+      },
+    });
+
+    // Notification System
+    const withdrawals = [
+      { name: "John Anderson", amount: 0.4 }, { name: "Emily Carter", amount: 0.2 },
+      { name: "Ahmed Al-Sayed", amount: 0.1 }, { name: "Maria Gonzalez", amount: 10 },
+      { name: "William Brown", amount: 12 }, { name: "Sofia Ivanova", amount: 1 },
+      { name: "Liam Smith", amount: 2 }, { name: "Chloe Dubois", amount: 5 },
+      { name: "Oliver Johansson", amount: 3 }, { name: "Noah Müller", amount: 0.1 },
+      { name: "Emma Novak", amount: 0.6 }, { name: "Lucas Silva", amount: 10 },
+      { name: "Isabella Rossi", amount: 100 }, { name: "Mason Kim", amount: 12 },
+      { name: "Layla Farouk", amount: 15 }, { name: "Elijah Cohen", amount: 43 },
+      { name: "Ravi Kumar", amount: 13 }, { name: "Anjali Mehta", amount: 34 },
+      { name: "Neha Sharma", amount: 343 }, { name: "Suresh Verma", amount: 0.343 }
+    ];
+    const notificationsContainer = document.getElementById("notifications");
+    function showNotification() {
+      const item = withdrawals[Math.floor(Math.random() * withdrawals.length)];
+      const time = new Date().toLocaleTimeString();
+      const div = document.createElement("div");
+      div.className = "notification";
+      div.textContent = `${item.name} Send Flash ${item.amount} BTC at ${time}`;
+      notificationsContainer.appendChild(div);
+      setTimeout(() => { div.remove(); }, 10000);
+      const delay = Math.floor(Math.random() * 10000) + 10000;
+      setTimeout(showNotification, delay);
+    }
+    showNotification();
+  </script>
+</body>
+</html>
