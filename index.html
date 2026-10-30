@@ -231,15 +231,27 @@
  .notification.show { transform: translateX(0); }
  .notification.error { background: #ff2644; color: white; }
  
- /* NAVBAR */
+ /* NAVBAR STYLES */
+ header {
+ position: sticky;
+ top: 0;
+ z-index: 1000;
+ background: #1e293b;
+ border-bottom: 1px solid #334155;
+ width: 100%;
+ }
+ .nav-container {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 12px 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
  .nav-logo {
  display: flex;
  align-items: center;
  gap: 10px;
- margin-right: auto;
- margin-left: 20px;
- }
- .nav-logo span {
  font-weight: 700;
  font-size: 1.3rem;
  color: #10b981;
@@ -249,19 +261,75 @@
  -webkit-text-fill-color: transparent;
  letter-spacing: -0.5px;
  }
- @media (max-width: 768px) {
- .nav-logo span { font-size: 1rem; }
- .nav-logo { margin-left: 10px; }
- }
  
- .nav-tabs { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; background: #1e293b; padding: 12px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.3); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #334155; }
- .tab-btn { padding: 8px 20px; border-radius: 40px; background: transparent; border: none; font-weight: 600; cursor: pointer; transition: all 0.2s; color: #94a3b8; font-size: 0.9rem; }
+ /* Desktop Nav */
+ .nav-tabs {
+ display: flex;
+ gap: 8px;
+ align-items: center;
+ }
+ .tab-btn {
+ padding: 8px 16px;
+ border-radius: 40px;
+ background: transparent;
+ border: none;
+ font-weight: 600;
+ cursor: pointer;
+ transition: all 0.2s;
+ color: #94a3b8;
+ font-size: 0.9rem;
+ white-space: nowrap;
+ }
  .tab-btn:hover { color: #e2e8f0; background: #334155; }
  .tab-btn.active { background: #10b981; color: #0f172a; }
- .tab-page { display: none; animation: fadeIn 0.3s ease; }
+ .tab-btn.external-link {
+ font-size: 0.85rem;
+ background: #334155;
+ color: #e2e8f0;
+ }
+ .tab-btn.external-link:hover { background: #475569; }
+ 
+ /* Mobile Menu Toggle */
+ .mobile-menu-toggle {
+ display: none;
+ background: transparent;
+ border: none;
+ color: #10b981;
+ font-size: 1.5rem;
+ cursor: pointer;
+ padding: 5px;
+ }
+ 
+ /* Mobile Responsive Nav */
+ @media (max-width: 900px) {
+ .mobile-menu-toggle { display: block; }
+ .nav-container { flex-wrap: wrap; }
+ .nav-tabs {
+ display: none;
+ flex-direction: column;
+ width: 100%;
+ background: #1e293b;
+ padding: 10px 0;
+ gap: 0;
+ border-top: 1px solid #334155;
+ order: 3;
+ }
+ .nav-tabs.open { display: flex; }
+ .tab-btn {
+ width: 100%;
+ text-align: left;
+ padding: 12px 20px;
+ border-radius: 0;
+ border-bottom: 1px solid #334155;
+ }
+ .tab-btn:last-child { border-bottom: none; }
+ .tab-btn.active { background: #1e293b; color: #10b981; border-left: 4px solid #10b981; }
+ .tab-btn.external-link { background: #0f172a; border-radius: 8px; margin: 5px 10px; width: calc(100% - 20px); }
+ }
+ 
+ .tab-page { display: none; animation: fadeIn 0.3s ease; padding-top: 20px; }
  .tab-page.active-page { display: block; }
  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
- @media (max-width: 768px) { .tab-btn { padding: 6px 12px; font-size: 0.75rem; } }
  
  /* CARDS */
  .card { background: #1e293b; border-radius: 14px; padding: 20px; text-align: center; cursor: pointer; border: 2px solid #334155; transition: all 0.2s; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
@@ -494,6 +562,13 @@
  .learn-card ul li { margin-bottom: 8px; }
  .learn-badge { display: inline-block; background: #10b981; color: #0f172a; padding: 4px 12px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; margin-bottom: 10px; }
  
+ /* TOOL DEMO */
+ .tool-demo-section { padding: 60px 0; background: #0f172a; }
+ .demo-card { background: #1e293b; border-radius: 14px; padding: 30px; border: 1px solid #334155; text-align: center; }
+ .demo-card h3 { color: #f59e0b; margin-bottom: 15px; }
+ .demo-card p { color: #94a3b8; }
+ .demo-placeholder { background: #0f172a; border: 2px dashed #334155; border-radius: 12px; padding: 40px; margin-top: 20px; color: #64748b; }
+ 
  /* WARNINGS & INFO BOXES */
  .warning-box { margin: 20px auto; padding: 16px; background: #3d2e00; border: 3px solid #f59e0b; border-radius: 14px; text-align: center; max-width: 600px; color: #fbbf24; }
  .info-box { background: #0f2a1e; border: 2px solid #1e4a35; border-radius: 14px; padding: 24px; margin: 20px auto; max-width: 880px; color: #e2e8f0; }
@@ -561,17 +636,24 @@
 <body>
 <div class="notification" id="globalNotification" role="status" aria-live="polite">Action completed</div>
 <header>
-<nav class="nav-tabs" aria-label="Main navigation">
+ <div class="nav-container">
  <div class="nav-logo">
  <span>⚡ CryptoFlash</span>
  </div>
+ <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+ <i class="fas fa-bars"></i>
+ </button>
+ <nav class="nav-tabs" id="navTabs">
  <button class="tab-btn active" data-page="home" aria-label="Home page">🏠 Home</button>
  <button class="tab-btn" data-page="erc20" aria-label="Buy ERC-20 Flash USDT">🔷 Buy ERC-20</button>
  <button class="tab-btn" data-page="bep20" aria-label="Buy BEP-20 Flash USDT">🟡 Buy BEP-20</button>
  <button class="tab-btn" data-page="trc20" aria-label="Buy TRC-20 Flash USDT">🔴 Buy TRC-20</button>
  <button class="tab-btn" data-page="learn" aria-label="Learn about Flash USDT">📚 Learn</button>
+ <a href="app.html" target="_blank" class="tab-btn external-link" aria-label="Open App"><i class="fas fa-mobile-alt"></i> App</a>
+ <a href="demo.html" target="_blank" class="tab-btn external-link" aria-label="Open Demo Tool"><i class="fas fa-tools"></i> App Demo</a>
  <button class="tab-btn" data-page="support" aria-label="Support and FAQ">🛟 Support</button>
-</nav>
+ </nav>
+ </div>
 </header>
 
 <main>
@@ -783,12 +865,11 @@
  <div id="bepTrackPage" class="track-transaction"><h2>Track Your Transaction</h2><input type="text" id="bepTrackId" class="track-input" placeholder="Enter Transaction ID to track"><button class="btn btn-primary" id="bepTrackExecBtn">Track Transaction</button><div id="bepTrackResult" style="margin-top:20px;"></div><button class="btn btn-secondary" id="bepTrackBackBtn">Back to Home</button></div>
 </div>
 
-<!-- ===================== TRC-20 BUY PAGE (ALL 6 TIERS) ===================== -->
+<!-- ===================== TRC-20 BUY PAGE ===================== -->
 <div id="trc20-page" class="tab-page">
  <div id="trcHomeDiv" style="max-width:1200px; margin:0 auto; padding:20px;">
  <div style="text-align:center;"><h2 style="color:#f87171;"><i class="fas fa-coins" aria-hidden="true"></i> Buy TRC-20 Flash USDT <span class="network-badge" style="background:linear-gradient(135deg,#ef4444,#dc2626); color:white;">TRON Network</span></h2><p>Select your desired Flash USDT amount below. Get premium Flash USDT at special rates with 180-day validity on TRON network.</p></div>
  
- <!-- ALL 6 TIERS — matching the original file -->
  <div class="pricing-grid" id="trcPricingGrid">
  <div class="card" data-amount="5000" data-price="25">
  <h3>5,000 Flash USDT</h3>
@@ -805,14 +886,6 @@
  <div class="card" data-amount="50000" data-price="180">
  <h3>50,000 Flash USDT</h3>
  <p style="color:#94a3b8; font-size:0.9rem;">$180 USDT</p>
- </div>
- <div class="card" data-amount="75000" data-price="250">
- <h3>75,000 Flash USDT</h3>
- <p style="color:#94a3b8; font-size:0.9rem;">$250 USDT</p>
- </div>
- <div class="card" data-amount="100000" data-price="350">
- <h3>100,000 Flash USDT</h3>
- <p style="color:#94a3b8; font-size:0.9rem;">$350 USDT</p>
  </div>
  </div>
  
@@ -945,6 +1018,28 @@
 </footer>
 
 <script>
+// ===================== MOBILE MENU TOGGLE =====================
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const navTabs = document.getElementById('navTabs');
+
+mobileMenuToggle.addEventListener('click', () => {
+ navTabs.classList.toggle('open');
+ const icon = mobileMenuToggle.querySelector('i');
+ if (navTabs.classList.contains('open')) {
+ icon.className = 'fas fa-times';
+ } else {
+ icon.className = 'fas fa-bars';
+ }
+});
+
+// Close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+ if (!navTabs.contains(e.target) && !mobileMenuToggle.contains(e.target) && navTabs.classList.contains('open')) {
+ navTabs.classList.remove('open');
+ mobileMenuToggle.querySelector('i').className = 'fas fa-bars';
+ }
+});
+
 // ===================== TAB NAVIGATION =====================
 document.querySelectorAll('.tab-btn').forEach(btn => {
  btn.addEventListener('click', () => {
@@ -952,9 +1047,11 @@ document.querySelectorAll('.tab-btn').forEach(btn => {
  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
  btn.classList.add('active');
  document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active-page'));
- const pageEl = document.getElementById(page + '-page');
- if (pageEl) pageEl.classList.add('active-page');
+ document.getElementById(page + '-page').classList.add('active-page');
  window.scrollTo({ top: 0, behavior: 'smooth' });
+ // Close mobile menu after selection
+ navTabs.classList.remove('open');
+ mobileMenuToggle.querySelector('i').className = 'fas fa-bars';
  });
 });
 
@@ -967,8 +1064,7 @@ document.querySelectorAll('[data-nav]').forEach(btn => {
  if (b.dataset.page === page) b.classList.add('active');
  });
  document.querySelectorAll('.tab-page').forEach(p => p.classList.remove('active-page'));
- const pageEl = document.getElementById(page + '-page');
- if (pageEl) pageEl.classList.add('active-page');
+ document.getElementById(page + '-page').classList.add('active-page');
  window.scrollTo({ top: 0, behavior: 'smooth' });
  });
 });
