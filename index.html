@@ -871,21 +871,21 @@
  <div style="text-align:center;"><h2 style="color:#f87171;"><i class="fas fa-coins" aria-hidden="true"></i> Buy TRC-20 Flash USDT <span class="network-badge" style="background:linear-gradient(135deg,#ef4444,#dc2626); color:white;">TRON Network</span></h2><p>Select your desired Flash USDT amount below. Get premium Flash USDT at special rates with 180-day validity on TRON network.</p></div>
  
  <div class="pricing-grid" id="trcPricingGrid">
- <div class="card" data-amount="5000" data-price="25">
+ <div class="card" data-amount="5000" data-price="50">
  <h3>5,000 Flash USDT</h3>
- <p style="color:#94a3b8; font-size:0.9rem;">$25 USDT</p>
+ <p style="color:#94a3b8; font-size:0.9rem;">$50 USDT</p>
  </div>
- <div class="card" data-amount="10000" data-price="45">
+ <div class="card" data-amount="10000" data-price="100">
  <h3>10,000 Flash USDT</h3>
- <p style="color:#94a3b8; font-size:0.9rem;">$45 USDT</p>
- </div>
- <div class="card" data-amount="25000" data-price="100">
- <h3>25,000 Flash USDT</h3>
  <p style="color:#94a3b8; font-size:0.9rem;">$100 USDT</p>
  </div>
- <div class="card" data-amount="50000" data-price="180">
+ <div class="card" data-amount="25000" data-price="250">
+ <h3>25,000 Flash USDT</h3>
+ <p style="color:#94a3b8; font-size:0.9rem;">$250 USDT</p>
+ </div>
+ <div class="card" data-amount="50000" data-price="500">
  <h3>50,000 Flash USDT</h3>
- <p style="color:#94a3b8; font-size:0.9rem;">$180 USDT</p>
+ <p style="color:#94a3b8; font-size:0.9rem;">$500 USDT</p>
  </div>
  </div>
  
@@ -1078,8 +1078,8 @@ function showNotification(message, isError = false) {
 }
 
 // ===================== SLIDER LOGIC (ERC-20) =====================
-const ercAmounts = [1000, 5000, 10000, 25000, 50000, 100000];
-const ercPrices = [10, 45, 85, 200, 350, 600];
+const ercAmounts = [3500, 5000, 10000, 25000, 50000, 100000];
+const ercPrices = [30, 45, 85, 200, 350, 600];
 
 function updateERC() {
  const val = parseInt(document.getElementById('ercSlider').value);
@@ -1092,8 +1092,8 @@ document.getElementById('ercSlider').addEventListener('input', updateERC);
 updateERC();
 
 // ===================== SLIDER LOGIC (BEP-20) =====================
-const bepAmounts = [1000, 5000, 10000, 25000, 50000, 100000];
-const bepPrices = [10, 45, 85, 200, 350, 600];
+const bepAmounts = [3500, 5000, 10000, 25000, 50000, 100000];
+const bepPrices = [30, 45, 85, 200, 350, 600];
 
 function updateBEP() {
  const val = parseInt(document.getElementById('bepSlider').value);
@@ -1269,7 +1269,7 @@ document.getElementById('bepTrackExecBtn').addEventListener('click', () => {
 
 // ===================== TRC-20 PURCHASE FLOW =====================
 let trcSelectedAmount = 5000;
-let trcSelectedPrice = 25;
+let trcSelectedPrice = 50;
 
 document.querySelectorAll('#trcPricingGrid .card').forEach(card => {
  card.addEventListener('click', () => {
