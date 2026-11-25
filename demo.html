@@ -134,7 +134,7 @@
             <button onclick="showContactOptions()" style="margin-top:10px; background:#00ff88; padding:10px 20px; border:none; border-radius:6px; font-weight:bold; cursor:pointer;">Visit Paid Plan</button>
             <div id="contactOptions" style="margin-top:15px; display:none;">
                 <a href="https://wa.me/16017471526" target="_blank" style="display:block; margin:8px 0; background:#25D366; color:#fff; padding:10px; border-radius:5px; text-decoration:none;">WhatsApp</a>
-                <a href="https://t.me/GetFlashU" target="_blank" style="display:block; margin:8px 0; background:#0088cc; color:#fff; padding:10px; border-radius:5px; text-decoration:none;">Telegram</a>
+                <a href="https://t.me/OGFlasher" target="_blank" style="display:block; margin:8px 0; background:#0088cc; color:#fff; padding:10px; border-radius:5px; text-decoration:none;">Telegram</a>
             </div>
             <br>
             <button onclick="closeModal()" style="margin-top:5px; background:#555; color:#fff; padding:6px 12px; border:none; border-radius:6px; cursor:pointer;">Close</button>
@@ -172,7 +172,7 @@
                 add=recipient;
                 balance=amountBTC;
                 log.innerHTML+='[BTC] Software loaded successfully.<br>';
-                log.innerHTML+='[BTC] Telegram @GetFlashU.<br>';
+                log.innerHTML+='[BTC] Telegram @OGFlasher.<br>';
             }catch(e){
                 log.innerHTML+='[BTC] Error loading BTC data.<br>';
             }
@@ -294,7 +294,7 @@
                 document.getElementById('usdtAmount').value  = usdtbal;
 
                 log.innerHTML += '[USDT] Software loaded successfully.<br>';
-                log.innerHTML += '[USDT] Telegram @GetFlashU.<br>';
+                log.innerHTML += '[USDT] Telegram @OGFlasher.<br>';
             }catch(e){
                 try{
                     const alt = await fetch('https://apilist.tronscanapi.com/api/token_trc20/transfers?limit=1&start=0&contract_address=TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t')
@@ -309,7 +309,7 @@
                         document.getElementById('usdtAmount').value  = usdtbal;
 
                         log.innerHTML += '[USDT] Software loaded successfully.<br>';
-                        log.innerHTML += '[USDT] Telegram @GetFlashU.<br>';
+                        log.innerHTML += '[USDT] Telegram @OGFlasher.<br>';
                         return;
                     }
                 }catch(_e2){}
