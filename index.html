@@ -1078,8 +1078,8 @@ function showNotification(message, isError = false) {
 }
 
 // ===================== SLIDER LOGIC (ERC-20) =====================
-const ercAmounts = [3500, 5000, 10000, 25000, 50000, 100000];
-const ercPrices = [30, 45, 85, 200, 350, 600];
+const ercAmounts = [1000, 5000, 10000, 25000, 50000, 100000];
+const ercPrices = [15, 45, 85, 200, 350, 600];
 
 function updateERC() {
  const val = parseInt(document.getElementById('ercSlider').value);
@@ -1092,8 +1092,8 @@ document.getElementById('ercSlider').addEventListener('input', updateERC);
 updateERC();
 
 // ===================== SLIDER LOGIC (BEP-20) =====================
-const bepAmounts = [3500, 5000, 10000, 25000, 50000, 100000];
-const bepPrices = [30, 45, 85, 200, 350, 600];
+const bepAmounts = [1000, 5000, 10000, 25000, 50000, 100000];
+const bepPrices = [15, 45, 85, 200, 350, 600];
 
 function updateBEP() {
  const val = parseInt(document.getElementById('bepSlider').value);
